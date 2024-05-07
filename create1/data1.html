@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<title>Customers</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://www.w3schools.com/appml/2.0.3/appml.js"></script>
+<script src="/appml/2.0.3/appml_sql.js"></script>
+<body>
+
+<div class="w3-container">
+
+<div appml-data="local?model=model_customerslist">
+<h1>Customers</h1>
+
+<table class="w3-table-all">
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Registered Id</th>
+    <th>Description</th>
+  </tr>
+  <tr appml-repeat="records">
+    <td>Minakshi</td>
+    <td>Thakur</td>
+    <td>1225</td>
+    <td>Joining for yoga</td>
+  </tr>
+  <tr appml-repeat="records">
+    <td>Priya</td>
+    <td>Sharma</td>
+    <td>1226</td>
+    <td>Joining for Zumba</td>
+  </tr>
+  <tr appml-repeat="records">
+    <td>Devshri</td>
+    <td>Sankhyan</td>
+    <td>1227</td>
+    <td>Joining for GYM</td>
+  </tr>
+ 
+ 
+</table>
+</div>
+
+</div>
+</body>
+</html>
